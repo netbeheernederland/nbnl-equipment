@@ -482,6 +482,15 @@ classes:
     from_schema: https://cim.ucaiug.io/ns#TC57CIM.IEC61970.Base.Core
     is_a: Equipment
     abstract: true
+    attributes:
+      BaseVoltage:
+        slot_uri: cim:ConductingEquipment.BaseVoltage
+        range: BaseVoltage
+        required: false
+        multivalued: false
+        description: Base voltage of this conducting equipment. Use only when
+          there is no voltage level container used and only one base voltage
+          applies.
     class_uri: cim:ConductingEquipment
   Terminal:
     description: An AC electrical connection point to a piece of conducting equipment.
