@@ -127,7 +127,10 @@ BusbarSection -- VoltageLevel
 ConnectivityNode -- Bay
 ConnectivityNode -- BoundaryPoint
 ConnectivityNode -- VoltageLevel
+ConnectivityNode -- Substation
+ConnectivityNode -- Line
 ContingencyEquipment -- ACLineSegment
+ContingencyEquipment -- BusbarSection
 ContingencyEquipment -- Contingency
 ContingencyEquipment -- PowerTransformer
 EquipmentLimitSeriesComponent -- ACLineSegment

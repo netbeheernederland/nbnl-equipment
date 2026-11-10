@@ -330,8 +330,10 @@ classes:
         description: Container of this connectivity node.
         slot_uri: cim:ConnectivityNode.ConnectivityNodeContainer
         any_of:
-          - range: VoltageLevel
           - range: Bay
+          - range: Line
+          - range: Substation
+          - range: VoltageLevel
         required: true
         multivalued: false
       BoundaryPoint:
@@ -827,8 +829,9 @@ classes:
         description: The single piece of equipment to which to apply the contingency.
         slot_uri: cim:ContingencyEquipment.Equipment
         any_of:
-          - range: PowerTransformer
           - range: ACLineSegment
+          - range: BusbarSection
+          - range: PowerTransformer
         required: true
         multivalued: false
     class_uri: cim:ContingencyEquipment
